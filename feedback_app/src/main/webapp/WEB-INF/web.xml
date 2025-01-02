@@ -1,0 +1,41 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>app_name</param-name>
+    <param-value>FeedbackAPP</param-value>
+  </context-param>
+
+  <!-- Servlet 1 configuration -->
+  <servlet>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>feedback_app.session.manage.Request1Servlet</servlet-class>
+    <init-param>
+      <param-name>userName</param-name>
+      <param-value>Vinay</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet 2 configuration -->
+  <servlet>
+    <servlet-name>servlet2</servlet-name>
+    <servlet-class>feedback_app.session.manage.Request2Servlet</servlet-class>
+    <init-param>
+      <param-name>userEmail</param-name>
+      <param-value>Vinay@gmail.com</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+</web-app>
